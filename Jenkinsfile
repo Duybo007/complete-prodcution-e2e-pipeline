@@ -20,11 +20,5 @@ pipeline{
                 git branch: 'main', credentialsId: 'github', url: 'https://github.com/Duybo007/complete-prodcution-e2e-pipeline.git'
             }
         }
-
-        stage("Cleanup workspace"){
-            steps{
-                cleanWs()
-            }
-        }
     }
 }
