@@ -20,6 +20,7 @@ pipeline {
         IMAGE_TAG = "${RELEASE}-${BUILD_NUMBER}"             // Image tag including Jenkins build number
         JENKINS_API_TOKEN = credentials('JENKINS_API_TOKEN') // Jenkins API token used to trigger other jobs
     }
+    
 
     stages {
         stage("Cleanup workspace") {
